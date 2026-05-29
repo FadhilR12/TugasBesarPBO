@@ -10,9 +10,9 @@ public class Pasien extends User {
     private List<RekamMedis> daftarRekam;
     private List<Resep> daftarResep;
 
-    public Pasien(int id, String nama, String alamat, String noHP) {
+    public Pasien(int id, String nama, String alamat, String noHP, String noRekamMedis) {
         super(id, nama, alamat, noHP);
-        this.noRekamMedis = "";
+        this.noRekamMedis = noRekamMedis;
         this.daftarJanji = new ArrayList<>();
         this.daftarRekam = new ArrayList<>();
         this.daftarResep = new ArrayList<>();

@@ -1,13 +1,6 @@
 package controller;
 
-import classes.Dokter;
-import classes.JanjiTemu;
-import classes.Obat;
-import classes.Pasien;
-import classes.Pembayaran;
-import classes.RekamMedis;
-import classes.Resep;
-import classes.Staff;
+import classes.*;
 import java.util.List;
 
 public class ClinicController {

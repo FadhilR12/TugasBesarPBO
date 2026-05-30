@@ -17,4 +17,9 @@ public class Staff extends User {
     public void verifikasiPembayaran() {
         System.out.println("Pembayaran diverifikasi");
     }
+
+    @Override
+    public void login() {
+        System.out.println("Staff login");
+    }
 }

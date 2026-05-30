@@ -9,6 +9,12 @@ public class JanjiTemu {
     private Pasien pasien;
     private Pembayaran pembayaran;
 
+    public JanjiTemu(int idJanji, String tanggal, String status) {
+        this.idJanji = idJanji;
+        this.tanggal = tanggal;
+        this.status = status;
+    }
+
     public JanjiTemu(int idJanji, String tanggal, String status, Dokter dokter, Pasien pasien) {
         this.idJanji = idJanji;
         this.tanggal = tanggal;
@@ -45,7 +51,15 @@ public class JanjiTemu {
         return dokter;
     }
 
+    public void setDokter(Dokter dokter) {
+        this.dokter = dokter;
+    }
+
     public Pasien getPasien() {
         return pasien;
+    }
+
+    public void setPasien(Pasien pasien) {
+        this.pasien = pasien;
     }
 }

@@ -38,12 +38,31 @@ public class Pasien extends User {
         daftarJanji.add(janji);
     }
 
+    public void buatJanji() {
+        daftarJanji.add(new JanjiTemu(0, "", "menunggu"));
+    }
+
     public void batalkanJanji(JanjiTemu janji) {
         daftarJanji.remove(janji);
     }
 
+    public void batalkanJanji() {
+        if (!daftarJanji.isEmpty()) {
+            daftarJanji.remove(daftarJanji.size() - 1);
+        }
+    }
+
     public void lihatPembayaran(Pembayaran pembayaran) {
         System.out.println("Jumlah pembayaran : " + pembayaran.getJumlah());
+    }
+
+    public void lihatPembayaran() {
+        for (JanjiTemu janji : daftarJanji) {
+            Pembayaran pembayaran = janji.getPembayaran();
+            if (pembayaran != null) {
+                lihatPembayaran(pembayaran);
+            }
+        }
     }
 
     public void bayarTagihan() {
@@ -54,6 +73,11 @@ public class Pasien extends User {
         for (Resep resep : daftarResep) {
             resep.lihatResep();
         }
+    }
+
+    @Override
+    public void login() {
+        System.out.println("Pasien login");
     }
 
     public String getNoRekamMedis() {

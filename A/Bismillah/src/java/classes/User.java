@@ -26,6 +26,14 @@ public class User {
         this.nama = nama;
     }
 
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public void setNoHP(String noHP) {
+        this.noHP = noHP;
+    }
+
     public String getAlamat() {
         return alamat;
     }

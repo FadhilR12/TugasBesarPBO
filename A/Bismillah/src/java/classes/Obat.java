@@ -20,7 +20,15 @@ public class Obat {
         return namaObat;
     }
 
+    public void setNamaObat(String namaObat) {
+        this.namaObat = namaObat;
+    }
+
     public double getHarga() {
         return harga;
+    }
+
+    public void setHarga(double harga) {
+        this.harga = harga;
     }
 }

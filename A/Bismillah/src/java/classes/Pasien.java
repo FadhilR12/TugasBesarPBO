@@ -60,6 +60,10 @@ public class Pasien extends User {
         return noRekamMedis;
     }
 
+    public void setNoRekamMedis(String noRekamMedis) {
+        this.noRekamMedis = noRekamMedis;
+    }
+
     public List<JanjiTemu> getDaftarJanji() {
         return daftarJanji;
     }

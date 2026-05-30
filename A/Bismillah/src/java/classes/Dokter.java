@@ -40,6 +40,10 @@ public class Dokter extends User {
         return spesialis;
     }
 
+    public void setSpesialis(String spesialis) {
+        this.spesialis = spesialis;
+    }
+
     public List<JanjiTemu> getDaftarJanji() {
         return daftarJanji;
     }

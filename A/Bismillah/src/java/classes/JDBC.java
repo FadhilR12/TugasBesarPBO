@@ -17,7 +17,7 @@ public class JDBC {
     }
 
     public void connect() {
-        String dbname = "test";
+        String dbname = "klinik";
         String username = "root";
         String password = "";
         try {
